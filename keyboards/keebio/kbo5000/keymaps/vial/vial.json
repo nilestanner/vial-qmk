@@ -1,488 +1,373 @@
 {
-    "name": "KBO-5000 Rev. 1",
-    "productId": "0x126A",
-    "vendorId": "0xCB10",
-    "lighting": "qmk_backlight_rgblight",
-    "matrix": {
-        "rows": 10,
-        "cols": 12
-    },
-    "layouts": {
-                "labels": [
-          "Split Backspace",
-          "ISO Enter",
-          "1.75u Right Shift",
-          "Stepped Caps",
-          "Split Left Shift",
-          [
-            "Left Bottom Row",
-            "All",
-            "1.5-x-1.5-1.25-2.25",
-            "2.25-1.25 Space",
-            "2.75u Space",
-            "3u Space"
-          ],
-          [
-            "Right Bottom Row",
-            "All",
-            "1.25-2.25-1.5-x-1.5",
-            "2.75u Space",
-            "1.25-2.25-1.25-1-1.25",
-            "3u Space"
-          ]
-        ],
-		"keymap": [
-        [
-    "0,0\n\n\n\n\n\n\n\n\ne",
-    {
-      "x": 0.5,
-      "c": "#777777"
-    },
-    "5,0",
-    {
-      "x": 1,
-      "c": "#cccccc"
-    },
-    "5,3",
-    "5,4",
-    "5,5",
-    "5,6",
-    {
-      "x": 0.5,
-      "c": "#aaaaaa"
-    },
-    "5,7",
-    "5,8",
-    {
-      "x": 1.5
-    },
-    "11,0",
-    "11,1",
-    {
-      "x": 0.5,
-      "c": "#cccccc"
-    },
-    "11,3",
-    "11,4",
-    "11,5",
-    "11,6",
-    {
-      "x": 1,
-      "c": "#aaaaaa"
-    },
-    "11,7",
-    "11,8",
-    "11,9",
-    {
-      "x": 3.5,
-      "c": "#cccccc"
-    },
-    "1,0\n\n\n\n\n\n\n\n\ne",
-    "2,0\n\n\n\n\n\n\n\n\ne"
-  ],
-  [
-    "0,1\n\n\n\n\n\n\n\n\ne",
-    {
-      "x": 24.5
-    },
-    "1,1\n\n\n\n\n\n\n\n\ne",
-    "2,1\n\n\n\n\n\n\n\n\ne"
-  ],
-  [
-    {
-      "y": -0.75,
-      "x": 1.5,
-      "c": "#aaaaaa"
-    },
-    "0,0",
-    {
-      "x": 0.5
-    },
-    "0,2",
-    {
-      "c": "#cccccc"
-    },
-    "0,3",
-    "0,4",
-    "0,5",
-    "0,6",
-    "0,7",
-    "0,8",
-    {
-      "x": 1.5
-    },
-    "6,0",
-    "6,1",
-    "6,2",
-    "6,3",
-    "6,4",
-    "6,5",
-    {
-      "c": "#aaaaaa",
-      "w": 2
-    },
-    "6,7\n\n\n0,0",
-    {
-      "x": 0.5
-    },
-    "6,8",
-    "6,9",
-    {
-      "x": 1
-    },
-    "6,6\n\n\n0,1",
-    "6,7\n\n\n0,1"
-  ],
-  [
-    {
-      "x": 1.5
-    },
-    "1,0",
-    {
-      "x": 0.5,
-      "w": 1.5
-    },
-    "1,2",
-    {
-      "c": "#cccccc"
-    },
-    "1,3",
-    "1,4",
-    "1,5",
-    "1,6",
-    "1,7",
-    {
-      "x": 1.5
-    },
-    "7,0",
-    "7,1",
-    "7,2",
-    "7,3",
-    "7,4",
-    "7,5",
-    "7,6",
-    {
-      "w": 1.5
-    },
-    "7,7\n\n\n1,0",
-    {
-      "x": 0.5,
-      "c": "#aaaaaa"
-    },
-    "7,8",
-    "7,9",
-    {
-      "x": 1.75,
-      "c": "#777777",
-      "w": 1.25,
-      "h": 2,
-      "w2": 1.5,
-      "h2": 1,
-      "x2": -0.25
-    },
-    "8,7\n\n\n1,1"
-  ],
-  [
-    {
-      "x": 1.5,
-      "c": "#aaaaaa"
-    },
-    "2,0",
-    {
-      "x": 0.5,
-      "w": 1.75
-    },
-    "2,2\n\n\n3,0",
-    {
-      "c": "#cccccc"
-    },
-    "2,3",
-    "2,4",
-    "2,5",
-    "2,6",
-    "2,7",
-    {
-      "x": 1.5
-    },
-    "8,0",
-    "8,1",
-    "8,2",
-    "8,3",
-    "8,4",
-    "8,5",
-    {
-      "c": "#777777",
-      "w": 2.25
-    },
-    "8,7\n\n\n1,0",
-    {
-      "x": 0.5,
-      "c": "#aaaaaa"
-    },
-    "8,8",
-    "8,9",
-    {
-      "x": 0.75,
-      "c": "#cccccc"
-    },
-    "8,6\n\n\n1,1"
-  ],
-  [
-    {
-      "x": 1.5,
-      "c": "#aaaaaa"
-    },
-    "3,0",
-    {
-      "x": 0.5,
-      "w": 2.25
-    },
-    "3,2\n\n\n4,0",
-    {
-      "c": "#cccccc"
-    },
-    "3,4",
-    "3,5",
-    "3,6",
-    "3,7",
-    "3,8",
-    {
-      "x": 1.5
-    },
-    "9,0",
-    "9,1",
-    "9,2",
-    "9,3",
-    "9,4",
-    {
-      "c": "#aaaaaa",
-      "w": 1.75
-    },
-    "9,6\n\n\n2,0",
-    {
-      "x": 1.5
-    },
-    "9,8",
-    {
-      "x": 1.25,
-      "w": 2.75
-    },
-    "9,6\n\n\n2,1"
-  ],
-  [
-    {
-      "x": 1.5
-    },
-    "4,0",
-    {
-      "x": 0.5,
-      "w": 1.25
-    },
-    "4,2\n\n\n5,0",
-    "4,3\n\n\n5,0",
-    {
-      "w": 1.25
-    },
-    "4,4\n\n\n5,0",
-    {
-      "w": 1.25
-    },
-    "4,5\n\n\n5,0",
-    "4,6\n\n\n5,0",
-    {
-      "w": 1.25
-    },
-    "4,7\n\n\n5,0",
-    {
-      "x": 1.5,
-      "w": 2.25
-    },
-    "10,1\n\n\n6,0",
-    {
-      "w": 1.25
-    },
-    "10,0\n\n\n6,0",
-    {
-      "w": 1.25
-    },
-    "10,2\n\n\n6,0",
-    "10,3\n\n\n6,0",
-    {
-      "w": 1.25
-    },
-    "10,6\n\n\n6,0",
-    {
-      "x": 0.5
-    },
-    "10,7",
-    "10,8",
-    "10,9"
-  ],
-  [
-    {
-      "x": 3,
-      "w": 1.5
-    },
-    "4,2\n\n\n5,1",
-    {
-      "x": 0.5,
-      "w": 1.5
-    },
-    "4,4\n\n\n5,1",
-    {
-      "w": 1.25
-    },
-    "4,5\n\n\n5,1",
-    {
-      "w": 2.25
-    },
-    "4,7\n\n\n5,1",
-    {
-      "x": 1.5,
-      "w": 1.25
-    },
-    "10,0\n\n\n6,1",
-    {
-      "w": 2.25
-    },
-    "10,1\n\n\n6,1",
-    {
-      "w": 1.5
-    },
-    "10,2\n\n\n6,1",
-    {
-      "x": 0.5,
-      "w": 1.5
-    },
-    "10,6\n\n\n6,1"
-  ],
-  [
-    {
-      "x": 3,
-      "w": 1.25
-    },
-    "4,2\n\n\n5,2",
-    "4,3\n\n\n5,2",
-    {
-      "w": 1.25
-    },
-    "4,4\n\n\n5,2",
-    {
-      "w": 2.25
-    },
-    "4,6\n\n\n5,2",
-    {
-      "w": 1.25
-    },
-    "4,7\n\n\n5,2",
-    {
-      "x": 1.5,
-      "w": 2.75
-    },
-    "10,1\n\n\n6,2",
-    {
-      "w": 1.25
-    },
-    "10,2\n\n\n6,2",
-    {
-      "w": 1.25
-    },
-    "10,3\n\n\n6,2",
-    {
-      "x": 0.5,
-      "w": 1.25
-    },
-    "10,6\n\n\n6,2"
-  ],
-  [
-    {
-      "x": 3,
-      "w": 1.25
-    },
-    "4,2\n\n\n5,3",
-    {
-      "x": 0.5,
-      "w": 1.25
-    },
-    "4,4\n\n\n5,3",
-    {
-      "w": 1.25
-    },
-    "4,5\n\n\n5,3",
-    {
-      "w": 2.75
-    },
-    "4,7\n\n\n5,3",
-    {
-      "x": 1.5,
-      "w": 1.25
-    },
-    "10,0\n\n\n6,3",
-    {
-      "w": 2.25
-    },
-    "10,1\n\n\n6,3",
-    {
-      "w": 1.25
-    },
-    "10,2\n\n\n6,3",
-    "10,3\n\n\n6,3",
-    {
-      "w": 1.25
-    },
-    "10,6\n\n\n6,3"
-  ],
-  [
-    {
-      "x": 3,
-      "w": 1.5
-    },
-    "4,2\n\n\n5,4",
-    "4,3\n\n\n5,4",
-    {
-      "w": 1.5
-    },
-    "4,4\n\n\n5,4",
-    {
-      "w": 3
-    },
-    "4,7\n\n\n5,4",
-    {
-      "x": 1.5,
-      "w": 3
-    },
-    "10,1\n\n\n6,4",
-    {
-      "w": 1.5
-    },
-    "10,2\n\n\n6,4",
-    "10,3\n\n\n6,4",
-    {
-      "w": 1.5
-    },
-    "10,6\n\n\n6,4"
-  ],
-  [
-    {
-      "y": 0.5,
-      "x": 3,
-      "w": 1.25,
-      "w2": 1.75,
-      "l": true
-    },
-    "2,2\n\n\n3,1"
-  ],
-  [
-    {
-      "x": 3,
-      "w": 1.25
-    },
-    "3,2\n\n\n4,1",
-    {
-      "c": "#cccccc"
-    },
-    "3,3\n\n\n4,1"
+  "name": "KBO-5000 Rev. 1",
+  "vendorProductId": 3406828138,
+  "macros": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+  "layers": [
+    [
+      "KC_ESC",
+      "KC_NO",
+      "KC_GRV",
+      "KC_1",
+      "KC_2",
+      "KC_3",
+      "KC_4",
+      "KC_5",
+      "KC_6",
+      "KC_NO",
+      "KC_MPLY",
+      "KC_NO",
+      "KC_TAB",
+      "KC_Q",
+      "KC_W",
+      "KC_E",
+      "KC_R",
+      "KC_T",
+      "KC_NO",
+      "KC_NO",
+      "KC_MUTE",
+      "KC_NO",
+      "KC_CAPS",
+      "KC_A",
+      "KC_S",
+      "KC_D",
+      "KC_F",
+      "KC_G",
+      "KC_NO",
+      "KC_NO",
+      "KC_VOLD",
+      "KC_NO",
+      "KC_LSFT",
+      "KC_NUBS",
+      "KC_Z",
+      "KC_X",
+      "KC_C",
+      "KC_V",
+      "KC_B",
+      "KC_NO",
+      "KC_VOLU",
+      "KC_NO",
+      "KC_LCTL",
+      "KC_LALT",
+      "KC_LGUI",
+      "KC_LALT",
+      "KC_SPC",
+      "KC_SPC",
+      "KC_NO",
+      "KC_NO",
+      "KC_ESC",
+      "KC_NO",
+      "KC_NO",
+      "KC_F1",
+      "KC_F2",
+      "KC_F3",
+      "KC_F4",
+      "KC_F5",
+      "KC_F6",
+      "KC_NO",
+      "KC_7",
+      "KC_8",
+      "KC_9",
+      "KC_0",
+      "KC_MINS",
+      "KC_EQL",
+      "KC_DEL",
+      "KC_BSPC",
+      "KC_INS",
+      "KC_HOME",
+      "KC_Y",
+      "KC_U",
+      "KC_I",
+      "KC_O",
+      "KC_P",
+      "KC_LBRC",
+      "KC_RBRC",
+      "KC_BSLS",
+      "KC_DEL",
+      "KC_PGUP",
+      "KC_H",
+      "KC_J",
+      "KC_K",
+      "KC_L",
+      "KC_SCLN",
+      "KC_QUOT",
+      "KC_NUHS",
+      "KC_ENT",
+      "KC_END",
+      "KC_PGDN",
+      "KC_N",
+      "KC_M",
+      "KC_COMM",
+      "KC_DOT",
+      "KC_SLSH",
+      "KC_NO",
+      "KC_RSFT",
+      "KC_NO",
+      "KC_UP",
+      "KC_NO",
+      "MO(1)",
+      "KC_SPC",
+      "KC_RALT",
+      "FN_MO13",
+      "KC_NO",
+      "KC_NO",
+      "KC_RCTL",
+      "KC_LEFT",
+      "KC_DOWN",
+      "KC_RGHT",
+      "KC_F7",
+      "KC_F8",
+      "KC_NO",
+      "KC_F9",
+      "KC_F10",
+      "KC_F11",
+      "KC_F12",
+      "KC_PSCR",
+      "KC_MUTE",
+      "KC_MPLY"
+    ],
+    [
+      "RGB_TOG",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "RGB_MOD",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "BL_STEP",
+      "KC_NO",
+      "KC_NO",
+      "RGB_HUI",
+      "RGB_HUD",
+      "RGB_SAI",
+      "RGB_SAD",
+      "RGB_VAI",
+      "RGB_VAD",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS"
+    ],
+    [
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_NO",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS"
+    ]
   ]
-        ]
-    }
 }

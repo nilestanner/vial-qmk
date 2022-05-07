@@ -38,9 +38,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == LEFT_HALF_ENC) {
         if (clockwise) {
-            tap_code(KC_PGDN);
+            tap_code(KC_WWW_FORWARD);
         } else {
-            tap_code(KC_PGUP);
+            tap_code(KC_WWW_BACK);
         }
     } else if (index == RIGHT_HALF_ENC1) {
         if (clockwise) {
@@ -50,9 +50,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         }
     } else if (index == RIGHT_HALF_ENC2) {
         if (clockwise) {
-            tap_code(KC_DOWN);
+            tap_code(KC_MEDIA_NEXT_TRACK);
         } else {
-            tap_code(KC_UP);
+            tap_code(KC_MEDIA_PREV_TRACK);
         }
     }
     return true;

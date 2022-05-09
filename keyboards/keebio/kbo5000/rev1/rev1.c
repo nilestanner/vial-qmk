@@ -1,6 +1,12 @@
 #include "kbo5000.h"
 #include "split_util.h"
 
+enum encoder_names {
+  LEFT_HALF_ENC = 0,
+  RIGHT_HALF_ENC1 = 2,
+  RIGHT_HALF_ENC2,
+};
+
 void matrix_init_kb(void) {
     setPinOutput(CAPS_LOCK_LED_PIN);
     matrix_init_user();
@@ -31,26 +37,52 @@ void eeconfig_init_kb(void) {
     eeconfig_init_user();
 }
 
-bool encoder_update_kb(uint8_t index, bool clockwise) {
-    if (!encoder_update_user(index, clockwise)) { return false; }
-    if (index == 0) {
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == LEFT_HALF_ENC) {
+      if (IS_LAYER_ON(0)) {
         if (clockwise) {
-            tap_code(KC_PGDN);
+            tap_code(KC_WWW_FORWARD);
         } else {
-            tap_code(KC_PGUP);
+            tap_code(KC_WWW_BACK);
         }
-    } else if (index == 1) {
+      } else if (IS_LAYER_ON(1)) {
+        if (clockwise) {
+          tap_code16(RGB_MODE_FORWARD);
+        } else {
+          tap_code16(RGB_MODE_REVERSE);
+        }
+      }
+        
+    } else if (index == RIGHT_HALF_ENC1) {
+      if (IS_LAYER_ON(0)) {
         if (clockwise) {
             tap_code(KC_VOLU);
         } else {
             tap_code(KC_VOLD);
         }
-    } else if (index == 2) {
+      } else if (IS_LAYER_ON(1)) {
         if (clockwise) {
-            tap_code(KC_DOWN);
+            tap_code16(RGB_HUI);
         } else {
-            tap_code(KC_UP);
+            tap_code16(RGB_HUD);
         }
+      }
+        
+    } else if (index == RIGHT_HALF_ENC2) {
+      if (IS_LAYER_ON(0)) {
+        if (clockwise) {
+            tap_code(KC_MEDIA_NEXT_TRACK);
+        } else {
+            tap_code(KC_MEDIA_PREV_TRACK);
+        }
+      } else if (IS_LAYER_ON(1)) {
+        if (clockwise) {
+            tap_code16(RGB_VAI);
+        } else {
+            tap_code16(RGB_VAD);
+        }
+      }
+        
     }
-    return false;
+    return true;
 }
